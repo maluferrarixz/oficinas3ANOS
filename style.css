@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Almarai', sans-serif;
+  background-color: white;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+header{
+border: 1px solid black;
+  /* position: relative; */
+  width: 100%;
+  height: 5vh;
+
+  background-color: #8a7979;
+}
+
+main{
+  min-height: 80vh;
+  width: 100%;
+  /* display: flex; */
+}
+.about{
+  /* position: absolute;
+  width: 63vw;
+  height: 48px; */
+  /* padding-left: 43vw; */
+  /* padding-top: 13vh; */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+
+  color: #000000;
+}
+.community{
+  padding-right: 20px;
+
+} 
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 200px; */
+  gap: 10px;
+}
+
+.card {
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  /* margin: 20px; */
+  width: 400px;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  color: #000000;
+}
+.card:hover {
+  transform: translateY(-15px);
+  cursor: pointer;
+}
+ 
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+
+.image{
+
+  width: 5vw;
+  height: 14vh;
+  /* padding-left: 20vw; */
+
+}
+.blue {
+  border-left: 3px solid #4895ff;
+}
+ 
+.green {
+  border-left: 3px solid #3bb54a;
+}
+ 
+.red {
+  border-left: 3px solid #b3404a;
+}
+.ofi2{
+  /* padding-top: 10px; */
+  
+}
+footer{
+
+  /* position: fixed; */
+  width: 100%;
+  height: 5vh;
+  /* left: 0px; */
+  /* top: 96.2vh; */
+  
+  background-color: #8a7979;
+}
+
+
+@media screen and (min-width: 800px) {
+  .container {
+    margin: 2em 2em;
+  }
+}
+
+@media screen and (max-width: 300px){
+  
+main{
+  border: 2px red solid;
+  
+}
+
+  body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .card p{
+      font-size: 12px;
+  }
+
+  h1{
+    font-size: 45px;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+}
+
